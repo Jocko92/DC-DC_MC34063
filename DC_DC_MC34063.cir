@@ -1,0 +1,25 @@
+* /media/timofeyms/Data/DIY_Electonics/DC_DC_MC34063/kicad_project/DC_DC_MC34063.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Wed 17 Jun 2020 01:08:38 AM MSK
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+U0  Net-_D0-Pad2_ GND Net-_C1-Pad1_ GND Net-_R3-Pad2_ +5V Net-_L0-Pad1_ Net-_R2-Pad1_ MC34063AP		
+R3  GND Net-_R3-Pad2_ R		
+L0  Net-_L0-Pad1_ Net-_D0-Pad2_ L		
+D0  /out_12V Net-_D0-Pad2_ 1N5819		
+P1  /out_12V GND CONN_01X02		
+P0  GND +5V CONN_01X02		
+R1  +5V Net-_L0-Pad1_ R		
+R6  Net-_R5-Pad2_ /out_12V R		
+R2  Net-_R2-Pad1_ Net-_L0-Pad1_ R		
+C1  Net-_C1-Pad1_ GND C		
+C2  /out_12V GND CP		
+C0  +5V GND CP		
+C3  /out_12V GND C		
+R5  Net-_R3-Pad2_ Net-_R5-Pad2_ R		
+R4  Net-_R2-Pad1_ Net-_L0-Pad1_ R		
+
+.end

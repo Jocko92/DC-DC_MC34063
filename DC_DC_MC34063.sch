@@ -1,0 +1,355 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:Regulator_Switching
+LIBS:Diode
+LIBS:DC_DC_MC34063-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 8268 11693 portrait
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MC34063AP U0
+U 1 1 5EE4D9FD
+P 3850 5600
+F 0 "U0" H 3550 5950 50  0000 L CNN
+F 1 "MC34063AP" H 3750 5950 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 3900 5150 50  0001 L CNN
+F 3 "" H 4350 5500 50  0001 C CNN
+	1    3850 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5EE4DA89
+P 4400 6100
+F 0 "R3" V 4475 6150 50  0000 C CNN
+F 1 "1.5 [KOhms]" V 4300 5950 50  0000 C CNN
+F 2 "Resistors_THT:Resistor_Vertical_RM5mm" V 4330 6100 50  0001 C CNN
+F 3 "" H 4400 6100 50  0000 C CNN
+	1    4400 6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L L L0
+U 1 1 5EE4DC4A
+P 4900 5250
+F 0 "L0" V 4850 5150 50  0000 C CNN
+F 1 "47 [uH]" V 4975 5250 50  0000 C CNN
+F 2 "Inductor_THT:L_Radial_D10.0mm_P5.00mm_Fastron_07M" H 4900 5250 50  0001 C CNN
+F 3 "" H 4900 5250 50  0000 C CNN
+	1    4900 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1N5819 D0
+U 1 1 5EE4DC57
+P 5100 5600
+F 0 "D0" H 5100 5700 50  0000 C CNN
+F 1 "1N5819" H 5100 5500 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-15_P12.70mm_Horizontal" H 5100 5425 50  0001 C CNN
+F 3 "" H 5100 5600 50  0001 C CNN
+	1    5100 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L +5V #PWR01
+U 1 1 5EE4DDD8
+P 2950 5350
+F 0 "#PWR01" H 2950 5200 50  0001 C CNN
+F 1 "+5V" H 2950 5490 50  0000 C CNN
+F 2 "" H 2950 5350 50  0000 C CNN
+F 3 "" H 2950 5350 50  0000 C CNN
+	1    2950 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5EE4DE04
+P 4000 6400
+F 0 "#PWR02" H 4000 6150 50  0001 C CNN
+F 1 "GND" H 4000 6250 50  0000 C CNN
+F 2 "" H 4000 6400 50  0000 C CNN
+F 3 "" H 4000 6400 50  0000 C CNN
+	1    4000 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 5EE4DFF1
+P 6250 5650
+F 0 "P1" H 6250 5800 50  0000 C CNN
+F 1 "CONN_01X02" V 6350 5650 50  0000 C CNN
+F 2 "Connect:AK300-2" H 6250 5650 50  0001 C CNN
+F 3 "" H 6250 5650 50  0000 C CNN
+	1    6250 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P0
+U 1 1 5EE4E0C2
+P 2650 5450
+F 0 "P0" H 2650 5600 50  0000 C CNN
+F 1 "CONN_01X02" V 2750 5450 50  0000 C CNN
+F 2 "Connect:AK300-2" H 2650 5450 50  0001 C CNN
+F 3 "" H 2650 5450 50  0000 C CNN
+	1    2650 5450
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 5EE4EBAE
+P 3700 5000
+F 0 "R1" V 3775 5050 50  0000 C CNN
+F 1 "0.3 [Ohms]" V 3600 5000 50  0000 C CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM15mm" V 3630 5000 50  0001 C CNN
+F 3 "" H 3700 5000 50  0000 C CNN
+	1    3700 5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R6
+U 1 1 5EE4EC1E
+P 5100 5900
+F 0 "R6" V 5175 5950 50  0000 C CNN
+F 1 "10 [KOhms]" V 5000 5800 50  0000 C CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM10mm" V 5030 5900 50  0001 C CNN
+F 3 "" H 5100 5900 50  0000 C CNN
+	1    5100 5900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5EE4EEB0
+P 4400 5300
+F 0 "R2" V 4475 5350 50  0000 C CNN
+F 1 "360 [Ohms]" V 4300 5300 50  0000 C CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM10mm" V 4330 5300 50  0001 C CNN
+F 3 "" H 4400 5300 50  0000 C CNN
+	1    4400 5300
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C1
+U 1 1 5EE4F438
+P 3300 6000
+F 0 "C1" H 3325 6100 50  0000 L CNN
+F 1 "471" H 3325 5900 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D6_P5" H 3338 5850 50  0001 C CNN
+F 3 "" H 3300 6000 50  0000 C CNN
+	1    3300 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C2
+U 1 1 5EE4F4B9
+P 5450 5800
+F 0 "C2" H 5475 5900 50  0000 L CNN
+F 1 "200 [uF]" H 5300 5700 50  0000 L CNN
+F 2 "Capacitors_THT:C_Radial_D5_L11_P2.5" H 5488 5650 50  0001 C CNN
+F 3 "" H 5450 5800 50  0000 C CNN
+	1    5450 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C0
+U 1 1 5EE4F709
+P 3150 5650
+F 0 "C0" H 3175 5750 50  0000 L CNN
+F 1 "100 [uF]" H 3000 5550 50  0000 L CNN
+F 2 "Capacitors_THT:C_Radial_D5_L11_P2.5" H 3188 5500 50  0001 C CNN
+F 3 "" H 3150 5650 50  0000 C CNN
+	1    3150 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5EE4F842
+P 5750 6000
+F 0 "C3" H 5775 6100 50  0000 L CNN
+F 1 "0.1 [uF]" H 5600 5900 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L7_W2.5_P5" H 5788 5850 50  0001 C CNN
+F 3 "" H 5750 6000 50  0000 C CNN
+	1    5750 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 5EE7BD77
+P 4750 5900
+F 0 "R5" V 4825 5975 50  0000 C CNN
+F 1 "3 [KOhms]" V 4650 5875 50  0000 C CNN
+F 2 "Resistors_THT:Resistor_Vertical_RM5mm" V 4680 5900 50  0001 C CNN
+F 3 "" H 4750 5900 50  0000 C CNN
+	1    4750 5900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5EE7BFBB
+P 4650 5300
+F 0 "R4" V 4725 5350 50  0000 C CNN
+F 1 "360 [Ohms]" V 4550 5300 50  0000 C CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM10mm" V 4580 5300 50  0001 C CNN
+F 3 "" H 4650 5300 50  0000 C CNN
+	1    4650 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2850 5400 2950 5400
+Wire Wire Line
+	2950 5400 3150 5400
+Wire Wire Line
+	3150 5400 3350 5400
+Wire Wire Line
+	3350 5400 3450 5400
+Wire Wire Line
+	2950 5350 2950 5400
+Connection ~ 2950 5400
+Wire Wire Line
+	3550 5000 3350 5000
+Wire Wire Line
+	3350 5000 3350 5400
+Connection ~ 3350 5400
+Wire Wire Line
+	4250 5000 4250 5400
+Connection ~ 4250 5000
+Wire Wire Line
+	4400 5450 4400 5500
+Wire Wire Line
+	4250 5500 4400 5500
+Wire Wire Line
+	4400 5500 4650 5500
+Wire Wire Line
+	4400 5150 4400 5150
+Wire Wire Line
+	4400 5000 4400 5150
+Connection ~ 4400 5000
+Wire Wire Line
+	4400 5950 4400 5900
+Connection ~ 4400 5900
+Wire Wire Line
+	5250 5600 5300 5600
+Wire Wire Line
+	5300 5600 5450 5600
+Wire Wire Line
+	5450 5600 5750 5600
+Wire Wire Line
+	5750 5600 5900 5600
+Wire Wire Line
+	5900 5600 6050 5600
+Wire Wire Line
+	5250 5900 5300 5900
+Wire Wire Line
+	5300 5900 5300 5600
+Connection ~ 5300 5600
+Wire Wire Line
+	5950 6350 5950 5700
+Wire Wire Line
+	3000 5500 3000 6350
+Connection ~ 3850 6350
+Connection ~ 3150 6350
+Wire Wire Line
+	3450 5800 3300 5800
+Wire Wire Line
+	3300 5800 3300 5850
+Wire Wire Line
+	3300 6350 3300 6150
+Connection ~ 3300 6350
+Wire Wire Line
+	3850 6350 3850 6100
+Wire Wire Line
+	4400 6350 4400 6250
+Connection ~ 4400 6350
+Connection ~ 5450 6350
+Connection ~ 5750 6350
+Wire Wire Line
+	5750 5850 5750 5600
+Connection ~ 5750 5600
+Wire Wire Line
+	5450 5650 5450 5600
+Connection ~ 5450 5600
+Wire Wire Line
+	5750 6350 5750 6150
+Wire Wire Line
+	5450 6350 5450 5950
+Wire Wire Line
+	3150 5500 3150 5400
+Connection ~ 3150 5400
+Wire Wire Line
+	3150 5800 3150 6350
+Wire Wire Line
+	3000 5500 2850 5500
+Wire Wire Line
+	5950 5700 6050 5700
+Wire Wire Line
+	3850 5000 4250 5000
+Wire Wire Line
+	4250 5000 4400 5000
+Wire Wire Line
+	4400 5000 4650 5000
+Wire Wire Line
+	4650 5000 4900 5000
+Wire Wire Line
+	4900 5400 4900 5600
+Wire Wire Line
+	4250 5600 4900 5600
+Wire Wire Line
+	4900 5600 4950 5600
+Connection ~ 4900 5600
+Wire Wire Line
+	4250 5900 4400 5900
+Wire Wire Line
+	4400 5900 4600 5900
+Wire Wire Line
+	4250 5800 4550 5800
+Wire Wire Line
+	4550 5800 4550 6350
+Wire Wire Line
+	3000 6350 3150 6350
+Wire Wire Line
+	3150 6350 3300 6350
+Wire Wire Line
+	3300 6350 3850 6350
+Wire Wire Line
+	3850 6350 4000 6350
+Wire Wire Line
+	4000 6350 4400 6350
+Wire Wire Line
+	4400 6350 4550 6350
+Wire Wire Line
+	4550 6350 5450 6350
+Wire Wire Line
+	5450 6350 5750 6350
+Wire Wire Line
+	5750 6350 5950 6350
+Connection ~ 4550 6350
+Wire Wire Line
+	4000 6400 4000 6350
+Connection ~ 4000 6350
+Wire Wire Line
+	4900 5900 4950 5900
+Wire Wire Line
+	4650 5000 4650 5150
+Wire Wire Line
+	4650 5500 4650 5450
+Connection ~ 4400 5500
+Wire Wire Line
+	4900 5000 4900 5100
+Connection ~ 4650 5000
+Text GLabel 5900 5400 1    60   Input ~ 0
+out_12V
+Wire Wire Line
+	5900 5400 5900 5600
+Connection ~ 5900 5600
+$EndSCHEMATC
